@@ -34,18 +34,41 @@ public class patterns {
 
 
         // Solid rhombus
-        int n = 5;
-        for (int rows=1; rows <= n; rows++){
-            // first spaces
-            for(int columns = 1; columns <= n-rows; columns++){
-                System.out.print(" ");
-            }
-            for (int columns = 1; columns <= n; columns++){
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+//        int n = 5;
+//        for (int rows=1; rows <= n; rows++){
+//            // first spaces
+//            for(int columns = 1; columns <= n-rows; columns++){
+//                System.out.print(" ");
+//            }
+//            for (int columns = 1; columns <= n; columns++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
+        // inverted triangle
+//        int n =5;
+//        for (int rows = 1; rows <= n; rows++){
+//            for (int columns = 1; columns <= n-rows+1; columns++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//
+
+
+        //solid  pyramid pattern
+//        int n =5;
+//        for (int rows =1; rows <= n; rows++){
+//            //part one spaces
+//            for (int col = 1; col <= n-rows+1; col++){
+//                System.out.print(" ");
+//            }
+//            for (int col = 1; col <= 2*rows-1; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
 
 

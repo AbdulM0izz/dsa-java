@@ -72,6 +72,27 @@ public class patterns {
 
 
 
+ // Hollow rectangle  n = 4;
+
+        int n = 4;
+        for (int row = 1; row <=n; row++) {
+            //columns
+            for (int columns = 1; columns<=6; columns++) {
+
+                if (row == 1 || row == n){
+                    System.out.print("* ");
+                } else {
+                    if (columns == 1 || columns == 6) {
+                        System.out.print("* ");
+                    }  else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+
+
 
 
 

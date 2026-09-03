@@ -9,10 +9,80 @@ public class arrays {
 
 //        int arr[] ={1,2,4};
 //          int arr[] = new int[3];
+//        int [][] arr = {
+//                {1,3,4,5,},
+//                {2,3},
+//                 {4,2,1}
+//        };
+//        for (int rowIndex = 0; rowIndex <= arr.length-1; rowIndex++) {
+//            for (int colIndex = 0; colIndex <= arr[colIndex].length-1; colIndex++) {
+//                System.out.print(arr[rowIndex][colIndex]);
+//            }
+//            System.out.println();
+//        }
+        // print the jagged 2d array
+//        int [][] arr = {
+//                {1,3,4,5,},
+//                {2,3},
+//                {4,2,1}
+//        };
+//        for (int row = 0; row <=3; row++) {
+//            for (int col = 0; col <=3; col++) {
+//                System.out.print(arr[row][col]);
+//            }
+//            System.out.println();
+//        }
+//
+//        int rowsLength = arr.length;
+//
+//        for (int rowIndex = 0; rowIndex <= rowsLength-1; rowIndex++) {
+//            int colLength = arr[rowIndex].length;
+//            for(int colIndex = 0; colIndex <= colLength-1; colIndex++) {
+//                System.out.print(arr[rowIndex][colIndex] + " ");
+//            }
+//            System.out.println();
+//        }
+
+
+        // 2 Dimensional array
+        //decleration
+//        int [][]arr;
+//        // allocation
+//        arr = new int [3][3];
+//        // initilaziton
+//        int [][] brr = {
+//                {3,3,4,},
+//                {2,1,3},
+//                {5,3,1}
+//        };
+//        System.out.println(brr[2][2]);
+        // print entire 2d array
+//        int rowLength = brr.length;
+//        int colLength = brr[0].length;  // to take the size of the columns in 2d array
+//
+//        for (int rowIndex = 0; rowIndex <= rowLength-1; rowIndex++) {
+//            for (int colIndex = 0; colIndex<=colLength-1; colIndex++) {
+//                System.out.println(brr[rowIndex][colIndex]);
+//            }
+//            System.out.println();
+//        }
+
+
+        // find minimum value in array
+//        int arr[] = {2,3,4,1};
+//        int n = arr.length;
+//        int min = arr[0];
+//
+//        for (int i=0; i<=n-1; i++) {
+//            if (arr[i] < min) {
+//                min = arr[i];
+//            }
+//        }
+//        System.out.println("Minimum = " + min);
 
 
         // Find max element in the array
-//        int arr[] = {5,4,3,2};
+//        int arr[] = {4,2,5,21,15};
 //        int n = arr.length;
 //        int max = arr[0];
 //

@@ -7,6 +7,50 @@ public class arrays {
         Scanner input = new Scanner(System.in);
         // int arr [];  or int [] arr;  decleration
 
+
+
+        // Max in 2d array
+//        int [][] arr = {{2,3,4},{2,55,21}};
+//        int maxValue = arr[0][0];
+//        for (int rowIndex = 0; rowIndex <= arr.length - 1; rowIndex++) {
+//           for (int colIndex = 0; colIndex <= arr[0].length - 1; colIndex++) {
+//
+//                if (arr[rowIndex][colIndex] > maxValue) {
+//                    maxValue = arr[rowIndex][colIndex];
+//                }
+//
+//              }
+//            }
+//        System.out.println(maxValue);
+
+
+        // sum of all the elements in 2d array
+//        int[][] arr = new int[2][3];
+//        int sum = 0;
+//
+//        for (int rowIndex = 0; rowIndex <= arr.length - 1; rowIndex++) {
+//            for (int colIndex = 0; colIndex <= arr[0].length - 1; colIndex++) {
+//                arr[rowIndex][colIndex] = input.nextInt();
+//                sum += arr[rowIndex][colIndex];
+//            }
+//        }
+//        System.out.println("Sum of all the elements in 2d array " + sum);
+
+
+//        int [][] arr = new int[2][2];
+//        for (int rowIndex = 0; rowIndex <= arr.length-1; rowIndex++) {
+//            for (int colIndex = 0; colIndex<=arr[0].length-1; colIndex++) {
+//                arr[rowIndex][colIndex] = input.nextInt();            }
+//        }
+//
+//        for (int rowIndex = 0; rowIndex <= arr.length-1; rowIndex++) {
+//            for (int colIndex = 0; colIndex<=arr[0].length-1; colIndex++) {
+//                System.out.print(arr[rowIndex][colIndex]);
+//            }
+//            System.out.println();
+//        }
+
+
 //        int arr[] ={1,2,4};
 //          int arr[] = new int[3];
 //        int [][] arr = {
@@ -20,7 +64,7 @@ public class arrays {
 //            }
 //            System.out.println();
 //        }
-        // print the jagged 2d array
+                  // print the jagged 2d array
 //        int [][] arr = {
 //                {1,3,4,5,},
 //                {2,3},
@@ -44,8 +88,8 @@ public class arrays {
 //        }
 
 
-        // 2 Dimensional array
-        //decleration
+                  // 2 Dimensional array
+                  //decleration
 //        int [][]arr;
 //        // allocation
 //        arr = new int [3][3];
@@ -56,7 +100,7 @@ public class arrays {
 //                {5,3,1}
 //        };
 //        System.out.println(brr[2][2]);
-        // print entire 2d array
+                  // print entire 2d array
 //        int rowLength = brr.length;
 //        int colLength = brr[0].length;  // to take the size of the columns in 2d array
 //
@@ -68,7 +112,7 @@ public class arrays {
 //        }
 
 
-        // find minimum value in array
+                  // find minimum value in array
 //        int arr[] = {2,3,4,1};
 //        int n = arr.length;
 //        int min = arr[0];
@@ -81,7 +125,7 @@ public class arrays {
 //        System.out.println("Minimum = " + min);
 
 
-        // Find max element in the array
+                  // Find max element in the array
 //        int arr[] = {4,2,5,21,15};
 //        int n = arr.length;
 //        int max = arr[0];
@@ -93,7 +137,7 @@ public class arrays {
 //        }
 //        System.out.println("Max in the array is " + max);
 
-        // multiply all the elements of the array
+                  // multiply all the elements of the array
 //        int num[] = {2,3,10,20};
 //        int n = num.length;
 //        int prod  = 1;
@@ -104,7 +148,7 @@ public class arrays {
 //        }
 //        System.out.println("Product of the array is " + prod);
 
-        // Print sum of all the elements of arrays
+                  // Print sum of all the elements of arrays
 
 //        int num[] = {20,40,50,60};
 //        int n = num.length;
@@ -116,23 +160,23 @@ public class arrays {
 //        }
 //        System.out.println("Sum of the elements of this arrays is " + sum);
 
-        // access array elements
+                  // access array elements
 //        System.out.println("Values at index 0 is " + arr[0]);
 //        System.out.println("Values at index 1 is " + arr[1]);
 //        System.out.println("Values at index 2 is " + arr[2]);
 
-        // access elements with the help of loop
+                  // access elements with the help of loop
 //        int n = arr.length;
 //        for (int index = 0; index <= n-1; index++) {
 //            System.out.println("Value at index " + index + " is " + arr[index]);
 //        }
 
-        // access with the help of for each
+                  // access with the help of for each
 //        for (int val : arr) {
 //            System.out.println("Value at " + val );
 //        }
 
-        // take input in array and print the values
+                  // take input in array and print the values
 //        for (int index = 0; index <= 2; index++) {
 //            arr[index] = input.nextInt();
 //        }
@@ -140,5 +184,5 @@ public class arrays {
 //            System.out.println(val);
 //        }
 
-    }
+              }
 }

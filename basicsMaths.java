@@ -43,6 +43,24 @@ public class basicsMaths {
         //Is prime return ture
         return true;
     }
+
+    static  boolean checkArmstrong (int num) {
+        int sum = 0;
+        int originalnum = num;
+        while (num != 0) {
+            int digit = num % 10;
+            int cubeOfDigit = digit*digit*digit;
+            sum = sum+cubeOfDigit;
+
+            num = num/10;
+        }
+        if ( sum == originalnum) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     public static void main(String[] args) {
         // Digits of the num
 //        printDigits(5310);
@@ -57,7 +75,12 @@ public class basicsMaths {
 //        System.out.println(ans);
 
         // check prime num
-        int num = 12;
-        System.out.println(checkPrime(num));
+//        int num = 12;
+//        System.out.println(checkPrime(num));
+
+        // check armstrong num
+        int num = 153;
+        System.out.println(checkArmstrong(num));
+
     }
 }

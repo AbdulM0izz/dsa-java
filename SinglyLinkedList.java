@@ -1,112 +1,137 @@
-import javax.print.attribute.standard.SheetCollate;
 
-public class SinglyLinkedList {
+class SinglyLinkedList {
 
-    static class Node {
+    public static class Node {
         int data;
         Node next;
 
-        //constructor
-        Node(int date ) {
-            this.data = date;
+        Node(int data) {
+            this.data = data;
             this.next = null;
         }
     }
 
     private Node head;
     private Node tail;
-    private int size;
+    private int size = 0;
 
-    // constructor
-    public SinglyLinkedList() {
+    SinglyLinkedList  () {
         this.head = null;
-        this.tail = null;
+        this.tail =  null;
         this.size = 0;
     }
 
-    //insert_At_Head
-    public void  insertAtHead(int data) {
+    public void insertAtHead(int data ) {
         Node newNode = new Node(data);
-        // If LL is empty so head and till will be new node;
-        if (head == null && tail == null) {
+
+        if(head == null && tail == null){
             head = newNode;
             tail = newNode;
         }else {
-            newNode.next = head;
+            newNode.next = head;  // previous head 
             head = newNode;
+
         }
-        // increase the size of the ll
         size++;
     }
 
-    //insert_AT_Tail
-    public void insertAtTail(int data) {
-
+    public void insertAtTail(int data ) {
         Node newNode = new Node(data);
-        if(head == null && tail == null) {
+
+        if (head == null && tail == null) {
             head = newNode;
             tail = newNode;
-        }else{
+        } else{
             tail.next = newNode;
             tail = newNode;
         }
         size++;
     }
 
-    //insert_At_Position
-    public void insertAtPosition (int position, int data) {
-        //checked invalid cases
+    // insert at head
+    public void insertAtPosition  (int position, int data) {
         if(position < 1 || position > size+1) {
-            System.out.println("Insertion is not possible ");
+            System.out.println("Invalid case ");
             return;
         }
-        if (position == 1) {
+        if(position == 1) {
             insertAtHead(data);
             return;
         }
-        if (position == size+1 ){
+        if(position == size+1) {
             insertAtTail(data);
             return;
         }
 
-        // insert at any position
+        // insert at position
         Node previousNode = head;
 
-        for(int i=1; i<=position-2; i++){
+        for (int i = 1; i < position - 2; i++){
             previousNode = previousNode.next;
         }
 
+        //Now create node and insert it;
         Node newNode = new Node(data);
-        newNode.next =  previousNode.next;
+
+
+        newNode.next = previousNode.next;
         previousNode.next = newNode;
 
         size++;
+
     }
 
-    // triversal
-        public void printLinkedList() {
-        Node temp = head;
-        while (temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
-        }
-        }
+    // get size
+    public int getSize() {
+        return size;
+    }
 
-
-        // empty
-    public  boolean isEmpty(){
+    public boolean isEmpty(){
         return head == null;
     }
 
+    public int getHead(){
+        if (head == null) {
+            return -1;
+        }else{
+            return head.data;
+        }
+    }
 
+    private int getTail(){
+        if( tail == null){
+            return -1;
+        }else{
+            return tail.data;
+        }
+    }
+
+    public void clearList (){
+        head = null;
+        tail = null;
+        size = 0;
+    }
+
+
+
+    // display
+    public void display(){
+        Node temp = head;
+        while (temp != null) {
+
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+    }
 
 
     public static void main(String[] args) {
-        SinglyLinkedList mylist = new SinglyLinkedList();
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.insertAtHead(5);
+        list.insertAtTail(6);
 
-        if(mylist.isEmpty()) {
-            System.out.println("List is empty ");
-        }
+        list.insertAtPosition(3,3);
 
+        list.display();
     }
 }
